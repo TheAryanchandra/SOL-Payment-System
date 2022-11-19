@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="qrcode.js"></script>
+  <script type="text/javascript" src="qr-combined.js"></script>
+  
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+
+  <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>SOL Payment System</header>
+      <form action="#">
+        <div class="row">
+          <label>Enter Wallet Address or Scan QR</label>
+          <textarea></textarea>
+        </div>
+        <div class="row">
+          <label>Enter Amount in SOL</label>
+          <input id="amount" type="number" onchange="generateQR()"></input>
+        </div>
+        
+        <div class="row">
+          <div id="qr" style="width:300px;height:250px">
+          </div>
+        </div>
+
+        <div class="row">
+            <div id="result" style="color: green"></div>
+        </div>
+      </form>
+
+ 
+      <div id="qrcode"></div>
+
+    </div>
+
+    
+
+  </body>
+</html>
